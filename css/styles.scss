@@ -35,6 +35,11 @@ img {
   max-width: 100%; // Bredde må maks fylde 100%
   height: auto; // Højden skal tilpasse sig
 }
+.prev, .next{
+
+  cursor: pointer;
+  z-index: 10;
+}
 
 .grid{
   display: grid;
