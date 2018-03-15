@@ -40,95 +40,76 @@
 <!-- i <body> har man alt indhold på siden -->
 <body>
 
+<div class="grid">
 
-<nav>
+    <div class="header">
 
-    <div class="nav-mob">
-        <span id="nav-bar" class="fa fa-bars"></span>
+        <img src="images/headercut.jpg" alt="kvalitetsvin">
+
     </div>
 
-    <div class="nav-elements">
-        <a href="#">Forside</a>
-        <a href="#">Viña Pontas</a>
-        <a href="#">Om os</a>
-        <a href="#">Forhandler</a>
+    <div class="title">
+
+        <img class="logohvid" src="images/logohvid.svg">
+
     </div>
 
-</nav>
+    <div class="content">
 
-<div class="container">
+        <h1>Titel 1</h1>
 
-    <header>
-        <div id="img1">
-            <img src="images/headercut.jpg">
-        </div>
-        <div class="img2">
-            <img src="images/vinapontashvid.png">
-        </div>
-    </header>
-
-    <main>
-
-    </main>
-
-    <footer>
-        <h3>
-
-        </h3>
-
-        <p class="address">
-            Viña Pontas, Claudio Coello 1 <br>
-            28006 Navarra, Spanien <br>
+        <p id="txt1">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Adipisci consequatur eveniet iusto maxime minus officiis
+            possimus repellendus soluta totam vitae! Ab asperiores
+            consequatur corporis doloremque enim modi pariatur quas,
+            quos soluta temporibus. Accusantium adipisci assumenda
+            corporis, deserunt dolorem dolorum eius eveniet impedit
+            ipsum laudantium natus nemo perferendis reprehenderit
+            tempora veritatis?
         </p>
 
-        <p class="info">
-            ViñaPontas@Dominio.dk <br>
-            +45 43 43 35 35
+        <h2>titel 2</h2>
+
+        <p id="txt2">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Error, expedita repellat? Ad aspernatur deleniti,
+            doloribus eum excepturi iste laborum libero nam nemo nobis
+            perspiciatis quaerat quisquam quo sapiente vel voluptatum!
         </p>
 
+        <h2>titel 3</h2>
 
-    </footer>
+        <p id="txt3">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            doloribus eum excepturi iste laborum libero nam nemo nobis
+            perspiciatis quaerat quisquam quo sapiente vel voluptatum!
+        </p>
+
+        <h2>titel 4</h2>
+
+        <p id="txt4">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Aperiam aut consequatur eos ex fugiat hic, illo magnam
+            modi nam sed! Accusantium aperiam culpa dignissimos
+            dolores eaque, eos excepturi explicabo facere, harum
+            laudantium magnam molestiae molestias nisi odio
+            perspiciatis provident qui quidem ratione recusandae
+            suscipit. Nostrum!
+        </p>
+
+    </div>
+    <div class="footer">Footer</div>
+
 
 </div>
-
-
 
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>
     $(document).ready(function (e) {
-        var navOpen = 0;
 
-        $("#nav-bar").click(function(e) {
-
-            if(navOpen == 1) {
-                $(".nav-elements").slideUp(200);
-                navOpen = 0;
-            }
-
-            else {
-                $(".nav-elements").slideDown(600);
-                navOpen = 1;
-            }
-
-        });
-
-        $(window).resize(function(e) {
-            var width = $(window).width();
-
-            if(width > 767) {
-                $(".nav-elements").css({"display":"-webkit-flex", "display":"flex"});
-                $("#nav-bar").css("display", "none");
-                navOpen = 1;
-            }
-
-            else {
-                $("#nav-bar").css("display", "block");
-                $(".nav-elements").css("display", "none");
-                navOpen = 0;
-            }
-        })
     });
 </script>
 </body>
