@@ -26,60 +26,35 @@ img {
   max-width: 100%;
   height: auto; }
 
-.container {
+.grid {
   display: grid;
-  grid-template-areas: 'header header header header header header' 'main main main main main main' 'footer footer footer footer footer footer'; }
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  background: url("../images/lerstruktur.jpg"); }
 
-nav {
-  width: 100%;
-  text-align: right;
-  font-size: 40px;
-  position: absolute; }
+.header {
+  grid-column: 1 / 13;
+  grid-row: 1; }
 
-.nav-mob {
-  padding: 30px;
-  color: white;
-  margin-right: 2%;
-  z-index: 2; }
+.title {
+  grid-column: 4 / 10;
+  grid-row: 1; }
 
-#nav-bar {
-  cursor: pointer; }
+.logohvid {
+  z-index: 10;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30%; }
 
-.nav-elements {
-  display: none;
-  position: absolute;
-  width: 100%;
-  z-index: 100;
-  background-color: transparent; }
+.content {
+  grid-column: 2 / 12;
+  grid-row: 2; }
 
-.nav-elements a {
-  display: block;
-  width: 100%;
-  text-align: center;
-  text-decoration: none; }
-
-.nav-elements a:hover {
-  background-color: #4c4c4c; }
-
-header {
-  grid-area: header;
-  height: auto; }
-
-.img2 {
-  position: absolute;
-  margin: auto; }
-
-main {
-  grid-area: main;
-  height: 600px;
-  background-color: red; }
-
-footer {
-  grid-area: footer;
-  height: auto;
-  background-color: orange;
-  text-align: center;
-  line-height: 46px;
-  padding: 3%; }
+.footer {
+  grid-column: 1 / 13;
+  grid-row: 3;
+  height: 200px;
+  background-color: rgba(161, 161, 161, 0.4);
+  text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */

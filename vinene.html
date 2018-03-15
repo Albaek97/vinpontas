@@ -32,7 +32,6 @@
 
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="https://use.fontawesome.com/aedc92d53d.js"></script>
 
 
 </head>
@@ -44,13 +43,11 @@
 
     <div class="header">
 
-        <img src="images/headercut.jpg" alt="kvalitetsvin">
-
     </div>
 
     <div class="title">
 
-        <img class="logohvid" src="images/logohvid.svg">
+        <img class="logosort" src="images/logosort.svg">
 
     </div>
 
@@ -101,47 +98,13 @@
     </div>
     <div class="footer">Footer</div>
 
-
 </div>
-
-
-
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>
     $(document).ready(function (e) {
-        var navOpen = 0;
 
-        $("#nav-bar").click(function(e) {
-
-            if(navOpen == 1) {
-                $(".nav-elements").slideUp(200);
-                navOpen = 0;
-            }
-
-            else {
-                $(".nav-elements").slideDown(600);
-                navOpen = 1;
-            }
-
-        });
-
-        $(window).resize(function(e) {
-            var width = $(window).width();
-
-            if(width > 767) {
-                $(".nav-elements").css({"display":"-webkit-flex", "display":"flex"});
-                $("#nav-bar").css("display", "none");
-                navOpen = 1;
-            }
-
-            else {
-                $("#nav-bar").css("display", "block");
-                $(".nav-elements").css("display", "none");
-                navOpen = 0;
-            }
-        })
     });
 </script>
 </body>
